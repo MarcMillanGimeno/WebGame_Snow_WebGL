@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="js/three.min.js"></script>
+	<script src="js/LoaderSupport.js"></script>
+    <script src="js/Old/OrbitControls.js"></script>
+	<script src="js/OBJLoader.js"></script>
+    <script src="js/MTLLoader.js"></script>
+    <script src="js/DDSLoader.js"></script>
+    <script src="js/Detector.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<style>
+		.container {
+			position: absolute;
+		}
+
+    #endMessage {
+			position: absolute;
+      width: 150px;
+      left: 300%;
+			top: 40px;
+			font-family: fantasy;
+      text-align: center;
+			font-size: 30px;
+      display: none;
+    }
+
+    #levelDiv{
+      margin-left: 100px;
+    }
+
+    #restartMessage{
+      margin-top: 100px;
+    }
+
+		#overlay {
+			position: absolute;
+			left: 14px;
+			top: 40px;
+			font-family: fantasy;
+			font-size: 30px;
+    }
+
+    #timerDiv{
+      float:left;
+      position:absolute;
+    }
+
+    #levelDiv{
+      margin-left: 1500%;
+    }
+
+    #levelDivEnd{
+      margin-top: 100px;
+    }
+
+    #gameOver{
+      	font-size: 60px;
+    }
+
+    #level{
+      margin-left:24px;
+      font-family: cursive;
+    }
+	</style>
+</head>
+<body style="margin: 0; padding:0">
+	<div class="container">
+		<canvas id="canvas"></canvas>
+		<div id="overlay">
+      <div id = "timerDiv" >Time: <span id="time"></span></div>
+      <div id = "levelDiv" >Level <span id="level"></span></div>
+		</div>
+    <div id="endMessage">
+      <div id ="gameOver">GAME OVER</div>
+      <div id = "levelDivEnd" >Level: <span id="levelFinal"></span></div>
+      <div id = "restartMessage">PRESS ESC TO RESTART</div>
+    </div>
+	</div>
+
+<script src="js/Own/controls.js"></script>
+<script src="js/Own/spawner.js"></script>
+<script src="js/Own/loader.js"></script>
+<script src="js/Own/main.js"></script>
+
+</body>
+</html>
